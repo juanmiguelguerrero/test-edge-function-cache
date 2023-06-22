@@ -3,5 +3,5 @@
 
 [[edge_functions]]
   cache = "manual"
-  path = "/fecha"
-  function = "fecha"  
+  path = "/date"
+  function = "date"  
