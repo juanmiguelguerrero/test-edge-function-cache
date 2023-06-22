@@ -7,8 +7,12 @@ export default async (request: Request, context: Context) => {
   let fecha = new Date()
   let rnd = Math.random()
 
-  return Response.json({ fecha, random: rnd }, {
-		headers: {
-			'cache-control': 'public, s-maxage=3600'
-		});
+  const response = new Response(JSON.stringify({date: fecha, rnd}), {
+    headers: {
+      'content-type': 'application/json',
+      'cache-control': 'public, s-maxage=3600'
+    },
+  })
+
+  return response
 };
