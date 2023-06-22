@@ -7,5 +7,8 @@ export default async (request: Request, context: Context) => {
   let fecha = new Date()
   let rnd = Math.random()
 
-  return Response.json({ fecha, random: rnd });
+  return Response.json({ fecha, random: rnd }, {
+		headers: {
+			'cache-control': 'public, s-maxage=3600'
+		});
 };
