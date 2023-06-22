@@ -1,0 +1,7 @@
+[build]
+  edge_functions = "edge-functions"
+
+[[edge_functions]]
+  cache = "manual"
+  path = "/fecha"
+  function = "fecha"  
