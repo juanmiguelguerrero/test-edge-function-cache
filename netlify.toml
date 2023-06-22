@@ -5,10 +5,3 @@
   cache = "manual"
   path = "/date"
   function = "date"  
-
-[[headers]]
-  for = "/date"
-  [headers.values]
-  cache-control = '''
-  public, 
-  s-maxage=3600'''
