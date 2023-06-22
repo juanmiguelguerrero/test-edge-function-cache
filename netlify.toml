@@ -9,4 +9,6 @@
 [[headers]]
   for = "/date"
   [headers.values]
-  cache-control = "public, s-maxage=3600"
+  cache-control = '''
+  public, 
+  s-maxage=3600'''
